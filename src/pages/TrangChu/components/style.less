@@ -1,0 +1,64 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../../styles/_variable.less';
+
+.home-welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+
+	h1 {
+		font-weight: 300;
+		font-size: 38px;
+
+		@media (max-width: @screen-xs) {
+			font-size: 26px;
+		}
+	}
+
+	h2 {
+		font-weight: 700;
+		font-size: 20px;
+
+		@media (max-width: @screen-xs) {
+			font-size: 18px;
+		}
+	}
+
+	.student-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+		
+		.student-name {
+		  font-size: 24px;
+		  font-weight: bold;
+		  margin: 10px 0;
+		}
+		
+		.student-id {
+		  font-size: 18px;
+		  color: #666;
+		  margin: 5px 0;
+		}
+	  }
+	  
+	  .home-welcome {
+		text-align: center;
+		padding: 20px;
+		
+		.title {
+		  font-size: 28px;
+		  font-weight: bold;
+		  margin: 20px 0;
+		}
+		
+		.sub-title {
+		  font-size: 22px;
+		  color: #666;
+		}
+	}
+}
